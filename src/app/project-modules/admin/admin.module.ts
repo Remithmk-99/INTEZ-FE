@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 import { HomeComponent } from './components/home/home.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [AdminComponent, HomeComponent, SidebarComponent],
+  declarations: [AdminComponent, HomeComponent, HeaderComponent],
   imports: [
     CommonModule,
+    SharedModule,
     AdminRoutingModule
   ]
 })

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener  } from '@angular/core';
 
 @Component({
   selector: 'app-admin',
@@ -11,6 +11,20 @@ export class AdminComponent {
 
   status: boolean = false;
   statusLink: boolean = false;
+  screenWidth: any;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.screenWidth = window.innerWidth;
+    if(this.screenWidth<1000){
+    this.status=true
+    console.log("this.status",this.status)
+    }
+    else{
+      this.status=false
+      console.log("this.fas",this.status)
+      }
+  }
   clickEvent() {
     this.status = !this.status;
     //this.statusLink = !this.statusLink;
