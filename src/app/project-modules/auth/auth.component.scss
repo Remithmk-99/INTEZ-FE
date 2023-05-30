@@ -1,1 +1,7 @@
 @import url('../../../styles.scss');
+.full-height {
+    height: 100% !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+ 

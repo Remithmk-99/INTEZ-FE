@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdminComponent } from './admin.component';
-import { HomeComponent } from './components/home/home.component';
+import { UserComponent } from './user.component';
+import { HomeComponent } from '../admin/components/home/home.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AdminComponent,
+    component: UserComponent,
     children: [
       {
         path: "",
@@ -32,4 +32,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AdminRoutingModule { }
+export class UserRoutingModule { }

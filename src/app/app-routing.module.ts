@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: () => import('./project-modules/admin/admin.module').then(module => module.AdminModule)
   },
+  {
+    path: 'user',
+    loadChildren: () => import('./project-modules/user/user.module').then(module => module.UserModule)
+  },
 ];
 
 @NgModule({

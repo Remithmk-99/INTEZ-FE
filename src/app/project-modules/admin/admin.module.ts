@@ -5,9 +5,10 @@ import { AdminComponent } from './admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from '../shared/shared.module';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
-  declarations: [AdminComponent, HomeComponent, HeaderComponent],
+  declarations: [AdminComponent, HomeComponent, HeaderComponent, UserProfileComponent],
   imports: [
     CommonModule,
     SharedModule,

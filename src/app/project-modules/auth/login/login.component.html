@@ -1,74 +1,130 @@
-<div style="overflow: hidden;">
-    
-    <div   class="row head-div" style="background-color: black;margin-left: 0px !important;"> 
-      <div class="col" style="padding: auto;">
-        <h1 class="title">Zoft<span style="color: rgb(82, 82, 205);"> Portal</span> </h1>
-    </div>
-      <div class="col" style="text-align: right">
-       
-        <button type="button" style="height: 26px;width:fit-content;border:1px solid rgb(91, 90, 90);padding: 1px 5px 3px 5px;" class="btn btn-light">Sign Up</button>
-      <i class="fa fa-question-circle" style="color: skyblue;width: 50px;height: 26px;"></i>
-      </div>
-      <span style="border-bottom: 2px solid rgb(198, 194, 194);margin-left: 10px;padding-top: 0px;"></span>
-      
-</div>
-
-
-    <div style="margin:5% 20% 0% 20%;height: 450px;text-align: center;border: 1px solid rgb(198, 194, 194);background-color: blue;">
-        <div class="container ps-md-0">
-        <div class="row g-0">
-          <div class=" col-md-6 col-lg-6 bg-image" style=""></div>
-          <div style="margin-top: 0%;" class="col-md-6 col-lg-6">
-                <div class="row">
-                    
-                    <!-- Sign In Form -->
-                    <form>
-                        
-
-                      <div class="row">
-                        <div class="col">
-                        <h1 class="title">Sign in</h1>
-                      </div>
-                        <div class="col">
-                          <label for="floatingInput">Email address</label>
-                        </div>
-                        <div class="col">
-                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        </div>
-                        
-                      </div>
-
-                      <div class="row">
-                        <div class="col">
-                          <label for="floatingInput">password</label>
-                        </div>
-                        <div class="col">
-                          <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        </div>
-                        
-                      </div>
-
-
-                 
-      
-                      <div class="form-check mb-3">
-                        <label class="form-check-label" for="rememberPasswordCheck">
-                          I forgot my password
-                        </label>
-                      </div>
-      
-                      <div class="d-grid">
-                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" [routerLink]="['/admin']" (click)="login()" type="submit">login</button>
-                     
-                      </div>
-      
-                    </form>
-                
+<!-- <div style="background-color:#DCD8E3;height: 100%;width: 100%;">
+  <div style="padding: 5% 20% 5% 20%;">
+     <div class="row" style="border-radius:20px 20px 20px 20px;height:450px;width:550px;background-color: bisque;">
+      <div class="col-6" style="background-color: #FEFEFE">
+       <div class="row">
+       <div class="col" style="text-align: center;height: 100%;">
+           <div><h4><img style="width: 20px;height: 20px;
+            " src="../../../../assets/icons/gmail.png">ZoftSolutions</h4></div>
+           <div>Enriching Buissness, the digital way</div>
+           <h3 class="welcome">Welcome Back</h3>
+           <h3 class="sub-head">Welcome Back, Please enter Your details</h3>
+           <div class="row" >
+             <div class="col-12">
+               <div class="row" style="height: 40px;background-color:#F0EFF2;margin:1% 15% 1% 15%;border-radius: 5px;padding: 1% 1% 1% 1%;">
+                <div class="col" style="background-color: #FEFEFE;text-align: center;padding-top: 2%;">signIn</div>
+                <div class="col" style="padding-top:2% ;">signUp</div>       
+               </div>
+               <div class="row" style="height: 40px;margin:1% 15% 1% 15%;border-radius: 5px;padding: 1% 1% 1% 1%;">
+                <div class="input-container">
+                  <i class="fa fa-envelope"></i>
+                  <input type="text" placeholder="Username">
                 </div>
-        
+                <div class="input-container">
+                  <i class="fa fa-key"></i>
+                  <input type="text" placeholder="Username">
+                </div>
+              </div>
+              
+             </div>
           
+            </div>
+         
+
+         
+        </div>
+       </div>
+      </div>
+      <div class="col-6" style="">
+      <img src="../../../../assets/images/login-page-image.jpg" class="img" >
+      </div>
+    </div>
+</div>
+    
+</div> -->
+
+
+
+
+<div class="center-align">
+  <section class="h-100 gradient-form" style="background-color: #DCD8E3;">
+    <div class="container py-5 h-100" style="border-radius: 25px 25px 25px 25px;">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                  
+              
+                  <div class="container" style="margin-bottom: 20px;">
+                    <div class="row">
+                      <div class="col">
+                        <i class="fa fa-key"></i>
+                        <span class="word" style="font-size: 26px;"><span style="color: rgb(104, 104, 168);">Zoft</span>Solutions</span>
+                      </div>
+                      <div class="w-100"></div> <!-- Line break -->
+                      <div class="col">
+                        <span class="word" style="font-size: 7px;margin-left: 0%;margin-top: 0px !important;">Enriching Buissness,the Digital Way!!!</span>
+                      </div>
+                    </div>
+                  </div>
+                         
+                          
+                      <!-- </div>
+                      <div class="col">
+                         oi
+                      </div> -->
+                    <!-- </div> -->
+                
+                      <h4 class="welcome">Welcome</h4>
+                    <h4 class="sub-head">Welcome Back, Please enter Your details</h4>
+                    <div class="row" style="height: 40px;background-color:#F0EFF2;margin:1% 15% 1% 15%;border-radius: 5px;padding: 1% 1% 1% 1%;">
+                      <div class="col" style="background-color: #FEFEFE;text-align: center;padding-top: 2%;">signIn</div>
+                      <div class="col" style="padding-top:2% ;">signUp</div>       
+                     </div>
+                  </div>
+  
+                  <form>
+                   
+                    <div class=" form-outline mb-4">
+                      <i class="fa fa-envelope envelope"></i>
+                      <input type="text" class="form-control" placeholder="Email Address">
+                    </div>
+  
+                    <div class=" form-outline mb-4">
+                      <i class="fa fa-key envelope"></i>
+                      <input type="text" class="form-control" placeholder="Password">
+                    </div>
+  
+                    <div class="form-outline mb-4" >
+                      <button class="btn btn-primary btn-block " type="button">Continue</button>
+                    </div>
+  
+                    <div class="or-container">
+                      <div class="line-separator"></div>
+                       <div class="or-label">or Continue With Google</div>
+                       <div class="line-separator"></div>
+                      </div>
+
+                    <div class="form-outline mb-4" >
+                      <button class="btn btn-primary btn-block " style="background-color: white;color: black;" type="button"> <i class="fa fa-google"></i>
+                        Sign In With Google</button>
+                    </div>
+  
+                  </form>
+  
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                    <img src="../../../assets/images/login-page-image.jpg" width="100%" height="100%">
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
+  </section> 
 </div>

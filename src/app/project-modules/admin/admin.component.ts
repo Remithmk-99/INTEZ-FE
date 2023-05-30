@@ -12,29 +12,47 @@ export class AdminComponent {
   status: boolean = false;
   statusLink: boolean = false;
   screenWidth: any;
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: Event) {
-    this.screenWidth = window.innerWidth;
-    if(this.screenWidth<1000){
-    this.status=true
-    console.log("this.status",this.status)
-    }
-    else{
-      this.status=false
-      console.log("this.fas",this.status)
-      }
+  toggleButton: any
+  content:any
+  sidebar:any
+  constructor(){
   }
-  clickEvent() {
-    this.status = !this.status;
-    //this.statusLink = !this.statusLink;
 
-    if (this.statusLink) {
-      setTimeout(() => {
-        this.statusLink = false;
-      }, 230);
-    } else {
-      this.statusLink = true;
-    }
-  }
+//   this.toggleButton = document.getElementById('toggleButton');
+//  this.content = document.querySelector('.content');
+  // @HostListener('window:resize', ['$event'])
+  // onResize(event: Event) {
+  //   this.screenWidth = window.innerWidth;
+  //   if(this.screenWidth<1000){
+  //   this.status=true
+  //   console.log("this.status",this.status)
+  //   }
+   
+  // }
+  // clickEvent() {
+  //   this.status = !this.status;
+  //   //this.statusLink = !this.statusLink;
+
+  //   if (this.statusLink) {
+  //     setTimeout(() => {
+  //       this.statusLink = false;
+  //     }, 230);
+  //   } else {
+  //     this.statusLink = true;
+  //   }
+  // }
+
+ 
+
+// this.toggleButton.addEventListener('click', function() {
+//    this.sidebar = document.querySelector('.sidebar');
+  
+//   if (this.sidebar.style.width === '0px') {
+//     sidebar.style.width = '250px';
+//     content.classList.remove('full-width');
+//   } else {
+//     sidebar.style.width = '0';
+//     content.classList.add('full-width');
+//   }
+// });
 }

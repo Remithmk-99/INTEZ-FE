@@ -1,46 +1,116 @@
 @import url('../../../../styles.scss');
-.login {
-    min-height: 100vh;
-  }
-  .outer-div {
-  
-    height: 100%;
-    width: 100%;
-  }
-  
-  .bg-image {
-    background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
-    background-size: cover;
-    background-position: center;
-    height: 450px;
-    // width: 350px;
-  }
-  
-  .login-heading {
-    font-weight: 300;
-  }
-  
-  .btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-  }
-  
-  .head-div{
-    width: 100%;
-    // padding:0px 15px 0px 15px;
-    padding: 1%;
-    // border-bottom: 2px solid rgb(198, 194, 194);
+
+.center-align{
+
 }
 
-.title {
-    font-size: 25px;
-    font-weight: 50px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.44;
-    margin-top: 10px;
-    letter-spacing: normal;
-    text-align: center;
-    color: #343434;
+.main-div{
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img{
+  height:500px;
+ width: 100%;
+ 
+  border-radius: 0px 20px 20px 0px;
+}
+
+.welcome{
+  font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+color: #424242;
+
+}
+
+.sub-head{
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #9D9999;
+
+}
+
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  /* Add your icon styles here */
+}
+
+input[type="text"] {
+  padding-left: 30px; /* Adjust this value to leave space for the icon */
+  /* Add any other input styles here */
+}
+.envelope{
+position: relative;
+top:28px;
+left: 10px;
+}
+button{
+  width:100%
+}
+
+
+
+@media (max-width: 600px) {
+  .main {
+      border-radius: 0px;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-card {
+      width: 300px;
+      margin: auto;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.img-fluid{
+  height: 100%;
+}
+
+.or-container {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+  margin: 25px 0;
+}
+
+.line-separator {
+  background-color: #ccc;
+  flex-grow: 5;
+  height: 1px;
+}
+
+
+
+
+
+
+
+
+
+

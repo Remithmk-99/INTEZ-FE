@@ -1,4 +1,4 @@
-<div class="outer-div">
+<div class="outer-div" style="">
      <div  class="sidebarMenu" style="" [ngClass]="status ? 'closeSideBar' : 'openSideBar'">
 
         <div class="sideBarUst text-center pt-3" style="">
@@ -6,7 +6,7 @@
 
          
             <div class="userInfo mt-3" >
-                <div class="userFoto mb-2" (click)="clickEvent()" [ngClass]="status ? 'userPhotoClose' : 'userPhotoOpen'">EE</div>
+                <div class="userFoto mb-2" id="toggleButton" [ngClass]="status ? 'userPhotoClose' : 'userPhotoOpen'">EE</div>
     
             </div>
     
@@ -37,10 +37,16 @@
    
     </div>
   
-
-  <div  style="" [ngStyle]="{'margin-left': status? '-48%' : '-40%'}"> 
-    <!-- <div class="flex-column"> -->
-    <app-header></app-header>
-    <router-outlet></router-outlet>
+<!-- [ngStyle]="{'margin-left': status? '-48%' : '-40%'}" -->
+  <div  style="overflow-y: scroll; 
+    background-color: aqua;
+  " class="content"> 
+    
+    <!-- <div style="position : sticky;z-index: 150;;top :0;background-color:white;padding: 3% ;"> -->
+        <app-header></app-header>
+    <!-- </div> -->
+    <!-- <div style="position: relative;"> -->
+        <router-outlet></router-outlet>
+    <!-- </div> -->
 </div>
 </div>

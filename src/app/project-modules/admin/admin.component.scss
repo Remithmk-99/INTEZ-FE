@@ -1,18 +1,24 @@
 .outer-div {
   display: flex;
   flex-direction: column;
-  // background-color: #ffbb00;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%;
+  width: 100% !important;
 }
 
 .sidebarMenu{
   background-color: #00417b;
   color: #fff;
-  width: 270px;
-  height: 100vh;
   z-index: 100;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust as needed */
+    height: 100%;
+   
+    transition: transform 0.3s ease;
+
 }
 .openSideBar{
   color: #fff;
@@ -101,4 +107,17 @@ line-height: normal;
 }
 .darSideBarAlt{
   width: 60px;
+}
+
+.content{
+  margin-left: 250px; /* Adjust to match sidebar width */
+  transition: margin-left 0.3s ease;
+}
+.content.full-width {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .content {
+    max-width: 100%;
+  }
 }
