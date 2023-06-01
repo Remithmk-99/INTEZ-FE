@@ -1,0 +1,31 @@
+<div class="outer-div">
+  <div
+    class="sidebarMenu"
+    [ngClass]=""
+  >
+    <div class="sideBarUst text-center pt-3">
+      <div class="toggleIcon mt-3" (click)="onToggle()">
+        <img
+          src="../../../../../assets//icons/bars-solid.svg"
+          class="toogle-icon"
+        />
+
+        <div style="margin-top: 30px">
+          <div class="btn-group-vertical nav-button-groups">
+            <button
+              [routerLink]="[item.path]"
+              routerLinkActive="router-link-active active-nav "
+              class="nav-button"
+              *ngFor="let item of menuItems"
+            >
+              <span><img class="nav-icon" [src]="item.icon" /></span>
+              <span *ngIf="isSidebarOpened">{{ item.title }}</span>
+            </button>
+          </div>
+        </div> 
+
+     
+      </div>
+    </div>
+  </div>
+</div>

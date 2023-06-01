@@ -110,8 +110,7 @@ line-height: normal;
 }
 
 .content{
-  margin-left: 250px; /* Adjust to match sidebar width */
-  transition: margin-left 0.3s ease;
+ 
 }
 .content.full-width {
   margin-left: 0;
@@ -119,5 +118,21 @@ line-height: normal;
 @media (min-width: 768px) {
   .content {
     max-width: 100%;
+  }
+}
+
+.router-view-div {
+  z-index: 1;
+  padding: 0px 20px 30px 20px;
+  background-color: #fff;
+}
+
+.main {
+  transition: margin-left .5s;
+}
+
+@media (max-width:600px) {
+  .router-view-div {
+      padding: 10px;
   }
 }

@@ -1,37 +1,32 @@
 @import url('../../../../styles.scss');
 
-.center-align{
 
+.logo{
+  width:50%
 }
-
-.main-div{
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .img{
   height:500px;
  width: 100%;
- 
   border-radius: 0px 20px 20px 0px;
 }
 
 .welcome{
   font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-color: #424242;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #424242;
+  margin-top: 30px;
 
 }
-
+.sign-row{
+  height: 40px;
+  background-color:#F0EFF2;
+  margin:1% 15% 1% 15%;
+  border-radius: 5px;
+  padding: 1% 1% 1% 1%;
+}
 .sub-head{
 font-family: 'SF Pro Display';
 font-style: normal;
@@ -44,26 +39,41 @@ color: #9D9999;
 
 }
 
+input{
+  height: 40px;
+}
 .input-container {
   position: relative;
 }
 
-.icon {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  /* Add your icon styles here */
-}
+
 
 input[type="text"] {
-  padding-left: 30px; /* Adjust this value to leave space for the icon */
-  /* Add any other input styles here */
+  padding-left: 40px; 
+  font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+
+color: #ABABAB;
+
+}
+.signtext{
+ padding-top: 10px;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 .envelope{
 position: relative;
 top:28px;
 left: 10px;
+width:20px;
+ height:20px
 }
 button{
   width:100%
@@ -98,7 +108,26 @@ button{
   display: flex;
   margin: 25px 0;
 }
+.label{
 
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+}
+.buttn{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: white;
+  border:1px solid #DCD8E3;
+  row-gap: 5px;
+}
 .line-separator {
   background-color: #ccc;
   flex-grow: 5;

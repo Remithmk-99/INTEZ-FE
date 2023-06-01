@@ -6,33 +6,28 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent {
-
-  openSidebar: boolean = true;
-
-  menuSidebar = [
-  
-   {
-      link_name: "Setting",
-      link: "/setting",
-      icon: "bx bx-cog",
-      sub_menu: []
-    },
-    {
-      link_name: "Setting",
-      link: "/setting",
-      icon: "bx bx-cog",
-      sub_menu: []
-    }
-  ]
-
+  isSidebarOpened: boolean = false;
+  scrWidth: any;
+  sidebarStatus: string = 'open';
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event:any) {
+    this.scrWidth = window.innerWidth;
+    if (this.scrWidth < 1120) this.isSidebarOpened = false;
+    else this.isSidebarOpened = true;
+  }
   constructor() { }
 
-  ngOnInit() {
-
+  ngOnInit(): void {
+    if (window.innerWidth < 1120) {
+      this.isSidebarOpened = false;
+    } else {
+      this.isSidebarOpened = true;
+    }
   }
 
-  sidebarStatus() {
-    this.openSidebar=!this.openSidebar
+  sidebarEvent(value:any) {
+
+    this.isSidebarOpened = value;
   }
 
 

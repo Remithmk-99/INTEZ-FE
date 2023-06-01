@@ -9,7 +9,7 @@ export class AdminComponent {
   name = "Angular Toggle Show Hide";
   showMyContainer: boolean = false;
 
-  status: boolean = false;
+  isSideBarOpen: boolean = true;
   statusLink: boolean = false;
   screenWidth: any;
   toggleButton: any
@@ -29,18 +29,10 @@ export class AdminComponent {
   //   }
    
   // }
-  // clickEvent() {
-  //   this.status = !this.status;
-  //   //this.statusLink = !this.statusLink;
-
-  //   if (this.statusLink) {
-  //     setTimeout(() => {
-  //       this.statusLink = false;
-  //     }, 230);
-  //   } else {
-  //     this.statusLink = true;
-  //   }
-  // }
+  clickEvent() {
+    this.isSideBarOpen = !this.isSideBarOpen;
+  
+  }
 
  
 

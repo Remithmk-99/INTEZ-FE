@@ -1,22 +1,77 @@
+<div style="padding: 2%;background-color: #E9E9E9;height: auto">
+    <div class="row">
 
-<div style="">
-    <div   class="row home-div"> 
-      <div class="col" style="">
-        <h1 class="title">Zoft<span style="color: rgb(82, 82, 205);"> Portal</span> </h1>
-    </div>
-      <div class="col" style="text-align: right">
-       
-      <div  style="display:flex;  justify-content: flex-end; grid-gap: 10px;">
-        <i class="fa fa-bell blue-color" style="" aria-hidden="true"></i>
-           <i class="fa fa-cog blue-color" aria-hidden="true"></i>
-            <div style="display:flex;  justify-content: flex-end;border: 1px solid rgb(209, 198, 198);">
-              <h2 >John Doe</h2>
-              <img style="border-radius: 50%;width: 25px;height:25px" src="../../../../../assets//icons/gmail.png">
+        <div class="col-3 profile">     
+          <div class="profile-det">
+            <img src="../../../../../assets/icons/rectangle.svg" width="100%">
+            <img class="dp" src="../../../../../assets//images//sample-profile-picture.png">
+         <h3 class="profile-name">John Alexander</h3>
+         <h4 class="position">UI/UX Designer</h4>
+          </div>
+
+          <div class="project-detail">
+            <span class="position"><img src="../../../../../assets//icons/projects.svg">&nbsp; Projects</span>
+            <div style="padding-top: 35px;">
+                <ul *ngFor="let project of projects" >
+                    <li>{{project?.title}}</li>
+                </ul>
             </div>
-      </div>
+        </div>
 
+        <div style="padding: 24px;">
+            <span class="position"><img src="../../../../../assets//icons//timesheet.svg">&nbsp; Timesheet</span>
         
-      </div>
-</div>
-<div style="background-color: rgb(140, 145, 145);width:100%;height:1px;border-bottom:1 px solid darkred;"></div>
+            <div class="timesheet">
+              
+                <div class="form-outline mb-4" >
+                    <button class="btn btn-primary btn-block"  type="button">Update Timesheet</button>
+                  </div>
+            </div>
+        </div>
+
+        <div class="leave-status">
+            <span class="position"><img src="../../../../../assets//icons//leave.svg">&nbsp; Leave Status</span>
+             <div class="leave-type">
+                <span>Casual Leave</span>
+                <span>03</span>
+             </div>
+             <div class="leave-type">
+                <span>Sick Leave</span>
+                <span>03</span>
+             </div>
+             <div class="leave-type">
+                <span>Annual Leave</span>
+                <span>15</span>
+             </div>
+        </div>
+
+        </div>
+
+
+        <div class="col">
+            <div class="col profile" style="padding: 3%;">
+                <h3 class="profile-name">Create Post</h3>
+                <div class="leave-type">
+                    <span><img src="">What's up, John?</span>
+                 </div>
+                <div style="display: flex;gap: 20px;">
+                    <span style="display: flex;gap: 5px;">
+                        <img src="../../../../../assets//icons/imgIcon.svg">
+                        <h4 class="title">image</h4>
+                    </span>
+                    <span style="display: flex;gap: 5px;"> 
+                        <img src="../../../../../assets//icons/vidIcon.svg">
+                        <h4 class="title">video</h4>
+                    </span>
+                </div>
+            </div>    
+
+            <div class="col profile" style="padding: 3%;margin-top: 3%;">
+                f
+            </div>
+        </div>
+        <div class="col-3" style=" border-radius: 10px;background: #FFFFFF;">
+3
+        </div>
+    </div>
 </div>

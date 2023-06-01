@@ -1,13 +1,9 @@
-<div class="outer-div" style="">
-     <div  class="sidebarMenu" style="" [ngClass]="status ? 'closeSideBar' : 'openSideBar'">
-
-        <div class="sideBarUst text-center pt-3" style="">
-           
-
-         
-            <div class="userInfo mt-3" >
-                <div class="userFoto mb-2" id="toggleButton" [ngClass]="status ? 'userPhotoClose' : 'userPhotoOpen'">EE</div>
-    
+<div class="outer-div" >
+     <div  class="sidebarMenu"  [ngClass]="isSideBarOpen ? 'openSideBar' :'closeSideBar' ">
+        <div class="sideBarUst text-center pt-3" >
+                  
+            <div class="toggleIcon mt-3" >
+                <div (click)="clickEvent()" class="userFoto mb-2" id="toggleButton" [ngClass]="isSideBarOpen ? 'userPhotoOpen' : 'userPhotoClose'">EE</div>   
             </div>
     
     
@@ -38,15 +34,8 @@
     </div>
   
 <!-- [ngStyle]="{'margin-left': status? '-48%' : '-40%'}" -->
-  <div  style="overflow-y: scroll; 
-    background-color: aqua;
-  " class="content"> 
-    
-    <!-- <div style="position : sticky;z-index: 150;;top :0;background-color:white;padding: 3% ;"> -->
-        <app-header></app-header>
-    <!-- </div> -->
-    <!-- <div style="position: relative;"> -->
-        <router-outlet></router-outlet>
-    <!-- </div> -->
-</div>
+  <!-- <div> 
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+</div> -->
 </div>
