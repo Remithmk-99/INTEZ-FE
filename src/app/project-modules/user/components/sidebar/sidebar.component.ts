@@ -19,13 +19,28 @@ export class SidebarComponent {
       icon: '../../../../../assets/icons/homeactive.svg'
     },
     {
-      path: '',
+      path: '/user/home',
       title: 'Timesheet',
       icon: '../../../../../assets/icons/timesheetinactive.svg'
     },
     {
-      path: '',
+      path: '/user/home',
       title: 'Activity Feed',
+      icon: '/assets/icons/activityfeed.svg'
+    },
+    {
+      path: '/user/home',
+      title: 'Assignments',
+      icon: '../../../../../assets/icons/homeactive.svg'
+    },
+    {
+      path: '/user/home',
+      title: 'Events',
+      icon: '../../../../../assets/icons/timesheetinactive.svg'
+    },
+    {
+      path: '/user/home',
+      title: 'Settings',
       icon: '/assets/icons/activityfeed.svg'
     }
   ];

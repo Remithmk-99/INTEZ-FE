@@ -1,16 +1,16 @@
-<div style="padding: 2%;background-color: #E9E9E9;height: auto">
+<div class="outer-div">
     <div class="row">
 
-        <div class="col-3 profile">     
-          <div class="profile-det">
-            <img src="../../../../../assets/icons/rectangle.svg" width="100%">
+        <div class="col-lg-3 col-md-3   profile">     
+          <div class="profile-det" >
+            <img src="../../../../../assets/icons/rectangle.svg"  width="100%">
             <img class="dp" src="../../../../../assets//images//sample-profile-picture.png">
          <h3 class="profile-name">John Alexander</h3>
-         <h4 class="position">UI/UX Designer</h4>
+         <h4 class="sub-title">UI/UX Designer</h4>
           </div>
 
           <div class="project-detail">
-            <span class="position"><img src="../../../../../assets//icons/projects.svg">&nbsp; Projects</span>
+            <span class="sub-title"><img src="../../../../../assets//icons/projects.svg">&nbsp; Projects</span>
             <div style="padding-top: 35px;">
                 <ul *ngFor="let project of projects" >
                     <li>{{project?.title}}</li>
@@ -19,7 +19,7 @@
         </div>
 
         <div style="padding: 24px;">
-            <span class="position"><img src="../../../../../assets//icons//timesheet.svg">&nbsp; Timesheet</span>
+            <span class="sub-title"><img src="../../../../../assets//icons//timesheet.svg">&nbsp; Timesheet</span>
         
             <div class="timesheet">
               
@@ -30,7 +30,7 @@
         </div>
 
         <div class="leave-status">
-            <span class="position"><img src="../../../../../assets//icons//leave.svg">&nbsp; Leave Status</span>
+            <span class="sub-title"><img src="../../../../../assets//icons//leave.svg">&nbsp; Leave Status</span>
              <div class="leave-type">
                 <span>Casual Leave</span>
                 <span>03</span>
@@ -48,13 +48,13 @@
         </div>
 
 
-        <div class="col">
-            <div class="col profile" style="padding: 3%;">
+        <div class="col-lg-6 col-md-5 " style="margin-right: 10px;">
+            <div class="col profile" style="padding: 2%;">
                 <h3 class="profile-name">Create Post</h3>
-                <div class="leave-type">
-                    <span><img src="">What's up, John?</span>
-                 </div>
-                <div style="display: flex;gap: 20px;">
+                    <textarea>What's up, John?</textarea>
+                  <img src="../../../../../assets//icons//content.svg" style="position: relative;left: 20px;bottom: 45px;">
+                <div style="display: flex;gap: 20px;justify-content: space-between;">
+                   <div style="display: flex;gap: 20px;justify-content: space-between;">
                     <span style="display: flex;gap: 5px;">
                         <img src="../../../../../assets//icons/imgIcon.svg">
                         <h4 class="title">image</h4>
@@ -63,15 +63,71 @@
                         <img src="../../../../../assets//icons/vidIcon.svg">
                         <h4 class="title">video</h4>
                     </span>
+                   </div>
+
+                        <button class="btn btn-primary btn-block" style="height: 38px;margin-top: 7px;"  type="button">
+                            <img src="../../../../../assets/icons/publish.svg" class="publish-icon">Publish</button>
                 </div>
+                       
+                
             </div>    
 
-            <div class="col profile" style="padding: 3%;margin-top: 3%;">
-                f
+            <div class="col profile" *ngFor="let feed of feeds" style="padding: 3%;margin-top: 3%;">
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="row">
+                        <div class="col-3"><img  src="../../../../../assets//images/sample-profile-picture.png" style="width:43px;height:43px;border-radius: 50%;"></div>
+                        <div class="col-9" >
+                            <h4 class="sub-title" style="color:  #424242;">John Alexander</h4>
+                            <h4 class="time">{{feed?.time}}</h4>
+                        </div>
+                    </div>
+                    <div >
+                        <img src="../../../../../assets//icons//threedot.svg">
+                    </div>
+                </div>
+
+               <div >
+                <p class="sub-title" style="color: #404040 !important;font-weight: 500;">{{feed?.content}} </p>
+                <img [src]="feed?.attachment" width="100%">
+                <div style="padding:15px 10px 10px 0px;display: flex;gap:20px ;">
+                   <span style="display: flex;gap: 5px;">
+                    <i class="fa fa-heart" style="color: #C53434;font-size: 22px;"></i>
+                    <h3 class="count">12</h3>
+                   </span>
+                    <span style="display: flex;gap: 5px;">
+                        <img src="../../../../../assets//icons/comment.svg" style="margin-top: -16px;">
+                    <h3 class="count">21</h3>
+                    </span>
             </div>
+               </div>
+            </div>
+                
         </div>
-        <div class="col-3" style=" border-radius: 10px;background: #FFFFFF;">
-3
+
+
+
+        <div class="col-lg  col-md-3 profile responsive" style="background-color:#E9E9E9">
+           <div *ngFor="let event of events" >
+            <div class="row" style=" border-radius: 10px;background: #FFFFFF;padding: 2%;margin-bottom: 10px;">
+                <div class="col-lg-9 col-md-12 col-xm-12">
+                     <h3 class="sub-title" style="padding-top:10px ;">Upcoming Event</h3>
+                     <h3 class="event-title">{{event?.title}}</h3>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 date-div">
+                 <h3 class="date">08</h3>
+                 <h3 class="day">Tue</h3>
+            </div>
+            <img [src]="event?.image" style="margin-top: 10px;">
+            <p class="content">{{event?.content}}</p>
+            <div class="event-dates">
+                <img src="../../../../../assets//icons/datepicker.svg" style="margin-right: 10px;">
+                08 Dec - 10 Dec, 2023
+            </div>
+             </div>
+ 
+             
+           </div>
+          
         </div>
     </div>
 </div>
