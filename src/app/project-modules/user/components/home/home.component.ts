@@ -41,4 +41,25 @@ events=[
     "date":""
   }
 ]
+
+constructor(){ 
+  this.getCurrentWeekDates()
+ } 
+
+getCurrentWeekDates() {
+  const currentDate = new Date();
+  const currentDay = currentDate.getDay(); // 0: Sunday, 1: Monday, ..., 6: Saturday
+
+  // Calculate the starting date of the current week
+  const startingDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - currentDay);
+
+  const weekDates = [];
+  for (let i = 0; i < 7; i++) {
+    const date = new Date(startingDate.getFullYear(), startingDate.getMonth(), startingDate.getDate() + i);
+    weekDates.push(date.getDate());
+  }
+ console.log("weekDates",weekDates)
+  return weekDates;
+}
+
 }

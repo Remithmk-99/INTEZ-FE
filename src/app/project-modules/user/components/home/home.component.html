@@ -1,9 +1,9 @@
 <div class="outer-div">
     <div class="row">
 
-        <div class="col-lg-3 col-md-3   profile">     
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7   profile">     
           <div class="profile-det" >
-            <img src="../../../../../assets/icons/rectangle.svg"  width="100%">
+            <img src="../../../../../assets/icons/rectangle.svg" class="dp-background"  >
             <img class="dp" src="../../../../../assets//images//sample-profile-picture.png">
          <h3 class="profile-name">John Alexander</h3>
          <h4 class="sub-title">UI/UX Designer</h4>
@@ -18,12 +18,17 @@
             </div>
         </div>
 
-        <div style="padding: 24px;">
+        <div style="padding-left: 20px;padding-top: 20px;">
             <span class="sub-title"><img src="../../../../../assets//icons//timesheet.svg">&nbsp; Timesheet</span>
         
+            <div class="row outer-timesheet-div" >
+                <div  class="col inner-timesheet-div" *ngFor="let date of getCurrentWeekDates()">
+                    {{date}}
+                </div>
+            </div>
             <div class="timesheet">
               
-                <div class="form-outline mb-4" >
+                <div class="form-outline mb-4" style="margin-top: 20px;">
                     <button class="btn btn-primary btn-block"  type="button">Update Timesheet</button>
                   </div>
             </div>
@@ -48,7 +53,7 @@
         </div>
 
 
-        <div class="col-lg-6 col-md-5 " style="margin-right: 10px;">
+        <div class="col-lg-6 col-md-5 col-sm-5 col-xs-7" style="margin-right: 10px;">
             <div class="col profile" style="padding: 2%;">
                 <h3 class="profile-name">Create Post</h3>
                     <textarea>What's up, John?</textarea>
@@ -106,7 +111,7 @@
 
 
 
-        <div class="col-lg  col-md-3 profile responsive" style="background-color:#E9E9E9">
+        <div class="col-lg  col-md-3 col-sm-3 col-xs-7 profile responsive" style="background-color:#E9E9E9">
            <div *ngFor="let event of events" >
             <div class="row" style=" border-radius: 10px;background: #FFFFFF;padding: 2%;margin-bottom: 10px;">
                 <div class="col-lg-9 col-md-12 col-xm-12">

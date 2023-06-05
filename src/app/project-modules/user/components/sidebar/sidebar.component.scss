@@ -1,7 +1,4 @@
 
-
-
-
   .sidebar-main {
     background-color:#E9E9E9;
     height: 100%;
@@ -36,48 +33,17 @@
   }
 
 
-  
-  .scroller {
-    overflow: auto;
-    width: 100%;
-    border-end-end-radius: 10px;
-    border-end-start-radius: 10px;
-    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.09) !important;
-   }
-
-   .scroller::-webkit-scrollbar {
-    height: 0px;
-    width: 4px;
-    }
-    .scroller::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #e0e0e0;
-    border-radius: 10px;
-    margin-top: 8px;
-    }
-    .scroller::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #0064d2;
-    }
-
-    
-      .router-link-active{
-        border-left: 5px solid #003e83;
-        padding-left: 0px;
-        .button-div{
-          .side-title {
-            color: #003e83;
-            }
-        }
-          .active-visible {
-          display: block;
-          }
-          .visible {
-          display: none;
-          }
+  .active{
+    background:  #307FF5;
+    border-radius: 5px;
+      &:hover {
+        color: #21252C;
       }
+      .visible {
+        display: none;
+      }
+  }
 
-    
-      
       .nav-button-groups {
         width: 100%;
       }
@@ -85,38 +51,39 @@
     .toogle-icon{
       width:30px;
       height:30px;
-      // background-color: #686c6a;
     }
       
       
-      .nav-button {
+      button {
         width: 100%;
         height: 55px;
         border: none;
         background: linear-gradient(180deg, #F4F5F9 0%, #F4F5F9 100%);
         outline: none;
         font-style: normal;
-        font-weight: 550;
-        font-size: 17px;
-        line-height: 20px;
-        // letter-spacing: 0px;
+        animation-name: sideBarButton;
+        animation-duration: 2s;
+        transition: background-color, margin-left;
+        transition-duration: 1s;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        display: flex;
         text-align: left;
-        padding: 10px 10px 10px 21px;
-color: #21252C;
-
+        padding: 13px 10px 10px 21px;
+        color: #21252C;
         cursor: pointer;
+      
       }
       
-      .nav-button:hover {
-        background:  #307FF5;
+      button:hover {
+        color:  #307FF5;
         border-right: 4px solid var(--night-blue);
         border-radius: 5px;
+        margin-left: 5px;
       }
       
-      .active-nav {
-        // background-color: #307FF5;
-        border-right: 4px solid var(--night-blue);
-      }
+     
       
       .nav-icon {
         margin-right: 10px;

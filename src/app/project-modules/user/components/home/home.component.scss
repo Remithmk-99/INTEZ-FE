@@ -4,6 +4,11 @@
   background-color: #E9E9E9;
   height: auto
 }
+
+.dp-background{
+ width: 100%;
+}
+
 .dp {
   position: relative;
   top: -36px;
@@ -73,8 +78,31 @@ textarea {
   justify-content: space-between;
 }
 .timesheet {
-  padding-top: 35px;
+  padding-top: 8px;
   border-bottom: 0.5px solid #c6c6c6;
+}
+.outer-timesheet-div{
+  background:#D6D6D6;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #D6D6D6;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-left: 1px;
+}
+.inner-timesheet-div{
+  background: #FFFFFF;
+  text-align: center;
+   width: 15px;
+  height: fit-content;
+  padding: 10px 10px 10px 5px;
+   margin: 1%;
+   border-radius: 5px;
+   font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+color: #808080;
 }
 
 .leave-status {
@@ -202,8 +230,54 @@ textarea {
     }
   }
 
-  @media (max-width: 992px) {
-   .outer-div{
-    margin-right: 0% !important;
-   }
+  // @media (max-width: 992px) {
+  //  .responsive{
+  //   padding-right: 0% !important;
+  //  }
+  //  .publish-icon{
+  //   width: 13px;
+  //   height: 13px;
+  //  }
+  // }
+
+  @media (max-width: 576px) {
+  .dp-background{
+    background: linear-gradient(260.81deg, #3DBDE8 12.58%, #307FF5 102.87%);
   }
+}
+
+
+@media (max-width: 830px) {
+  .btn{
+  font-size: 10px;
+  width:fit-content;
+  height:fit-content;
+}
+.publish-icon{
+  width: 13px;
+  height: 13px;
+
+ }
+}
+@media (max-width: 750px) {
+.publish-icon{
+  // width: 13px;
+  margin-left: 4px !important;
+  display: none;
+  // height: 13px;
+  // visibility: hidden;
+ }
+ .btn{
+  font-size: 10px;
+  padding: 3px 1px 3px 1px;
+}
+ .title{
+  font-size: 10px;
+ }
+}
+
+li{
+  margin-left: -8px;
+}
+
+  
