@@ -62,4 +62,15 @@ getCurrentWeekDates() {
   return weekDates;
 }
 
+isCurrentDate(date?:number){
+  const currentDate = new Date().getDate()
+  console.log("currentDate",currentDate,date)
+  if(currentDate == date){
+    return true
+  }
+  else{
+   return false
+  }
+}
+
 }

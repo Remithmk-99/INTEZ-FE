@@ -1,4 +1,9 @@
 <div class="outer-div">
+    <!-- <div  style="display: flex;gap: 20px;background: #E9E9E9;">
+            <h3 style="background-color: #b03636;">Profile</h3>
+            <h3>Feeds</h3>
+            <h3>Events</h3>
+    </div> -->
     <div class="row">
 
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7   profile">     
@@ -22,8 +27,9 @@
             <span class="sub-title"><img src="../../../../../assets//icons//timesheet.svg">&nbsp; Timesheet</span>
         
             <div class="row outer-timesheet-div" >
-                <div  class="col inner-timesheet-div" *ngFor="let date of getCurrentWeekDates()">
-                    {{date}}
+                <div  class="col inner-timesheet-div" *ngFor="let date of getCurrentWeekDates()" [ngStyle]="isCurrentDate(date) ? {'background': '#DAE9FF','border':'1px solid #307FF5','color': '#307FF5'} : {'background': '#FFFFFF','border':'1px solid #307FF5','color': '#808080'}">
+                    <!-- [style.background]="isCurrentDate(date) ? '#FFFFFF' : 'red'" [style.border]="item.promo ? '1px solid #dcdcdc' : '1px solid #fff'" -->
+                   <span > {{date}}</span>
                 </div>
             </div>
             <div class="timesheet">
@@ -35,7 +41,7 @@
         </div>
 
         <div class="leave-status">
-            <span class="sub-title"><img src="../../../../../assets//icons//leave.svg">&nbsp; Leave Status</span>
+            <span class="sub-title"><img src="../../../../../assets//icons//leave2.svg">&nbsp; Leave Status</span>
              <div class="leave-type">
                 <span>Casual Leave</span>
                 <span>03</span>

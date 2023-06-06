@@ -1,9 +1,106 @@
-@import url('../../../../../styles.scss');
-// td{
-//    overflow-wrap: break-word;
-// // }
-// .home-div{
-//     width: 100%;
-//     // margin-left: 0% !important;
-//     // padding: 1% 0% 1% 1%;
-// }
+
+.outer-div{
+  background-color: linear-gradient(180deg, #F4F5F9 0%, #F4F5F9 100%);
+  height: auto;
+
+}
+  .user{
+background: url(../../../../../assets/icons/profileImagebackground.svg);
+width: 100%;
+height: 230px;
+  }
+  .avatar{
+    position: relative;
+   bottom: 60px;
+   width:150px;
+   height: 150px;
+   border: 5px solid white;
+   border-radius: 50%;
+   margin-left: 8%;
+  }
+  .name{
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 36px;
+color: #424242;
+  }
+  .sub-title{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #8C8C8C;
+  }
+  .btn-light {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;  
+    background-color: #F2F2F2;
+    color: #363535;
+
+
+  }
+  .btn-block{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;  
+    color: #ffffff;
+  }
+//   .profile .user .avatar {
+//     position: absolute;
+//     left: 20px;
+//     top: -85px;
+//     z-index: 2;
+//   }
+  
+//   .profile .user h2 {
+//     font-size: 16px;
+//     line-height: 20px;
+//     display: block;
+//     float: left;
+//     margin: 4px 0px 0px 135px;
+//     font-weight: bold;
+//   }
+  
+//   .profile .user .actions {
+//     float: right;
+//   }
+  
+//   .profile .user .actions .btn {
+//     margin-bottom: 0px;
+//   }
+  
+//   .profile .info {
+//     float: left;
+//     margin-left: 20px;
+//   }
+  
+//   .img-profile{
+//       height:100px;
+//       width:100px;
+//   }
+  
+//   .img-cover{
+//       width:100%;
+//       height:300px;
+//   }
+  
+//   @media (max-width: 768px) {
+//     .btn-responsive {
+//       padding:2px 4px;
+//       font-size:80%;
+//       line-height: 1;
+//       border-radius:3px;
+//     }
+//   }
+  
+//   @media (min-width: 769px) and (max-width: 992px) {
+//     .btn-responsive {
+//       padding:4px 9px;
+//       font-size:90%;
+//       line-height: 1.2;
+//     }
+//   }

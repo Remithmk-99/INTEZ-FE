@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UserComponent } from './user.component';
 import { HomeComponent } from '../user/components/home/home.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { TimesheetDashboardComponent } from './components/timesheet-dashboard/timesheet-dashboard.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: "user-profile",
         component: UserProfileComponent,
+      },
+      {
+        path: "timesheet-dashboard",
+        component: TimesheetDashboardComponent,
       },
     
     
