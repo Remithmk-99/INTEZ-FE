@@ -89,6 +89,7 @@ textarea {
   border-radius: 10px;
   margin-top: 24px;
   margin-left: 1px;
+  
 }
 .inner-timesheet-div{
   background: #FFFFFF;
@@ -228,6 +229,13 @@ color: #808080;
       font-size: 13px;
       line-height: 15px;
     }
+    .outer-timesheet-div{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .inner-timesheet-div{
+      flex-basis: 20%; 
+    }
   }
 
   // @media (max-width: 992px) {
@@ -243,6 +251,9 @@ color: #808080;
   @media (max-width: 576px) {
   .dp-background{
     background: linear-gradient(260.81deg, #3DBDE8 12.58%, #307FF5 102.87%);
+  }
+  .date-div{
+    width: 20%;
   }
 }
 
@@ -274,6 +285,7 @@ color: #808080;
  .title{
   font-size: 10px;
  }
+
 }
 
 li{
