@@ -7,12 +7,14 @@ import { HomeComponent } from './components/home/home.component';
 import { TimesheetDashboardComponent } from './components/timesheet-dashboard/timesheet-dashboard.component';
 // import { SidebarComponent } from './components/sidebar/sidebar.component';
 // import { UserComponent } from './user.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [UserProfileComponent, HomeComponent, TimesheetDashboardComponent, ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    SharedModule
   ]
 })
 export class UserModule { }

@@ -1,1 +1,352 @@
-<p>timesheet-dashboard works!</p>
+<div class="outer-div">
+    <div style="display: flex;gap:30px">
+        <label class="lbl-timesheet">Timesheet</label>
+        <div class="profile-cover">
+            <img src="../../../../../assets//images/sample-profile-picture.png" class="profile-pic">
+            <h3 class="box-profile-name">John Alexander</h3>
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="row" >
+            <div class="col-2" style="">
+                <h3 class="head">Projects</h3>
+            </div>
+            <div class="col-2" style="">
+                <h3 class="head">Modules</h3>
+            </div>
+            <div class="col-2" style="">
+                <h3 class="head">Work Type</h3>
+            </div>
+            <div class="col-4" style="display: flex;gap: 10px;">
+                <h3 class="head">Mon</h3>
+                <h3 class="head">Tue</h3>
+                <h3 class="head">Wed</h3>
+                <h3 class="head">Thu</h3>
+                <h3 class="head">Fri</h3>
+                <h3 class="head">Sat</h3>
+                <h3 class="head">Sun</h3>
+            </div>
+            <div class="col-2" style="display: flex;">
+                <h3 class="head">Total</h3>
+                <h3 class="head">Total</h3>
+            </div>
+        </div>
+
+        <div style="border-bottom: 0.5px solid #838383;"></div>
+
+        <div class="row" >
+            <div class="col-2" style="border-right: 0.5px solid #838383;">
+                <div class="table-body">
+                  Bass Phase 2
+                </div>
+            </div>
+            
+            <div class="col-2" style="border-right: 0.5px solid #838383;">
+                <div class="table-body">
+                    Move Location
+                  </div>
+            </div>
+            <div class="col-2" style="border-right: 0.5px solid #838383;">
+                <div class="table-body">
+                    Bass Phase 2
+                  </div>
+                  <!-- <div class="table-body">
+                    Bass Phase 2
+                  </div> -->
+            </div>
+            <div class="col-4" style="display: flex;">
+                <h3 class="work-hours">08</h3>
+                <h3 class="work-hours">08</h3>
+                <h3 class="work-hours">08</h3>
+                <h3 class="work-hours">08</h3>
+                <h3 class="work-hours">08</h3>
+                <h3 class="work-hours">08</h3>
+                <h3 class="work-hours">08</h3>
+            </div>
+            <div class="col-2" style="display: flex;">
+                <h3 class="head">Total</h3>
+                <h3 class="head">Total</h3>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #E7E7E7;width: 100%;margin-left: 0px;border-radius: 0px 0px 10px 10px;padding:5px 5px !important">
+            <div class="col-6" style="">
+                <h3 class="head">Total</h3>
+            </div>
+           
+            <div class="col-4" style="display: flex;gap: 10px;">
+                <h3 class="head">08</h3>
+                <h3 class="head">08</h3>
+                <h3 class="head">08</h3>
+                <h3 class="head">08</h3>
+                <h3 class="head">08</h3>
+                <h3 class="head">08</h3>
+                <h3 class="head">08</h3>
+            </div>
+            <div class="col-2" style="display: flex;;">
+               
+                <h3 class="head">Total</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 20px;margin-left: 6px;">
+        <div class="col-2 button-div">
+        <img src="../../../../../assets/icons/plus.svg" style="background-color: #0266FF;border-radius: 50%;">
+        Add Project
+        </div>
+        <div class="col-2 button-div">
+            <i class="fa fa-copy"></i>
+            Copy Last Week
+        </div>
+        <div class="col-3">  </div>
+        <div class="col-2 button-div"> Update</div>
+        <div class="col-2 submit-button">
+              Submit
+        </div>
+    </div>
+
+</div>
+<!-- <div class="outer-div">
+    <div  style="display: flex;gap:30px">
+        <label class="lbl-timesheet">Timesheet</label>
+        <div class="profile-cover">
+             <img src="../../../../../assets//images/sample-profile-picture.png" class="profile-pic">
+            <h3 class="box-profile-name">John Alexander</h3></div>
+    </div> 
+    <div>
+        <table class=" table-bordered rounded-corners  ">
+            <thead>
+                <tr>
+                    <th> <img src="../../../../assets/Timesheet/edit-timesheet/project-head.png" class="head-icon">&nbsp; Projects </th>
+                    <th><img src="../../../../assets/Timesheet/edit-timesheet/modules-head.png" class="head-icon">&nbsp;Modules</th>
+                    <th><img src="../../../../assets/Timesheet/edit-timesheet/project-head.png" class="head-icon">&nbsp;Work Type</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                    <th>Su</th>
+                    <th><img src="../../../../assets/Timesheet/edit-timesheet/comment-head.png" class="head-icon"></th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr>
+                    <td>
+                        <div>
+                            <select class="input-text" >
+                                <option value="" class="selected-option"> Select Project </option>
+                                <option value="BassPhase2"> <span class="blue-dot"> Bass phase 2</span></option>
+                                <option value="IVSM">IVSM</option>
+                                <option value="GS1">GS1</option>
+                            </select>
+                            &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/minus.png" class="minus" (click)="addWorkType()">
+                        </div>
+                    </td>
+                    <td>
+                        <select class="input-text-2" >
+                            <option value="" class="selected-option"> Select Modules </option>
+                            <option value="Database"> Move Locations </option>
+                            <option value="FrontEnd"> </option>
+                            <option value="BackEnd">BackEnd</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/plus.png" class="plus" (click)="addWorkType()">
+                    </td>
+                    <td>
+                        <select class="input-text-2" >
+                            <option value="" class="selected-option"> Select Work Type</option>
+                            <option value="Database"> Database</option>
+                            <option value="FrontEnd">FrontEnd</option>
+                            <option value="BackEnd">BackEnd</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/plus.png" class="plus" (click)="addWorkType()">
+                    </td>
+                    <td>
+                        <input type="number" class="input-table"/>
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" >
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                      <img src="../../../../assets/Timesheet/edit-timesheet/comment-table-row.png" class="tbl-cmmnt-img">
+                    </td>
+                    <td>
+                        <time class="time-format">0.00<mat-icon>refresh</mat-icon>
+                        </time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <select class="input-text" >
+                                <option value="" class="selected-option"> Select Project </option>
+                                <option value="BassPhase2"> <span class="blue-dot"> Bass phase 2</span></option>
+                                <option value="IVSM">IVSM</option>
+                                <option value="GS1">GS1</option>
+                            </select>
+                            &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/minus.png" class="minus" (click)="addWorkType()">
+                        </div>
+                    </td>
+                    <td>
+                        <select class="input-text-2" >
+                            <option value="" class="selected-option"> Select Modules </option>
+                            <option value="Database"> Move Locations </option>
+                            <option value="FrontEnd"> </option>
+                            <option value="BackEnd">BackEnd</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/plus.png" class="plus" (click)="addWorkType()">
+                    </td>
+                    <td>
+                        <select class="input-text-2" >
+                            <option value="" class="selected-option"> Select Work Type</option>
+                            <option value="Database"> Database</option>
+                            <option value="FrontEnd">FrontEnd</option>
+                            <option value="BackEnd">BackEnd</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/plus.png" class="plus" (click)="addWorkType()">
+                    </td>
+                    <td>
+                        <input type="number" class="input-table"/>
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" >
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                      <img src="../../../../assets/Timesheet/edit-timesheet/comment-table-row.png" class="tbl-cmmnt-img">
+                    </td>
+                    <td>
+                        <time class="time-format">0.00<mat-icon>refresh</mat-icon>
+                        </time>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <select class="input-text" >
+                                <option value="" class="selected-option"> Select Project </option>
+                                <option value="BassPhase2"> <span class="blue-dot"> Bass phase 2</span></option>
+                                <option value="IVSM">IVSM</option>
+                                <option value="GS1">GS1</option>
+                            </select>
+                            &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/minus.png" class="minus" (click)="addWorkType()">
+                        </div>
+                    </td>
+                    <td>
+                        <select class="input-text-2" >
+                            <option value="" class="selected-option"> Select Modules </option>
+                            <option value="Database"> Move Locations </option>
+                            <option value="FrontEnd"> </option>
+                            <option value="BackEnd">BackEnd</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/plus.png" class="plus" (click)="addWorkType()">
+                    </td>
+                    <td>
+                        <select class="input-text-2" >
+                            <option value="" class="selected-option"> Select Work Type</option>
+                            <option value="Database"> Database</option>
+                            <option value="FrontEnd">FrontEnd</option>
+                            <option value="BackEnd">BackEnd</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <img src="../../../../assets/Timesheet/edit-timesheet/plus.png" class="plus" (click)="addWorkType()">
+                    </td>
+                    <td>
+                        <input type="number" class="input-table"/>
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" >
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                        <input type="text" class="input-table" />
+                    </td>
+                    <td>
+                      <img src="../../../../assets/Timesheet/edit-timesheet/comment-table-row.png" class="tbl-cmmnt-img">
+                    </td>
+                    <td>
+                        <time class="time-format">0.00<mat-icon>refresh</mat-icon>
+                        </time>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card">
+       <div>
+    <input type="text" placeholder="Make a comment"  class="input-comment ">
+    <img src="../../../assets/Timesheet/edit-timesheet/comment-pic.png" class="comment-profile-pic " >
+    </div>
+    <button class="button submit">submit</button><br><br>
+    <img src="../../../../assets/Timesheet/edit-timesheet/no comments yet.png">
+    </div>
+    <div>
+        <button class="btn-add-prjct">
+            <img class="plus" src="../../../../assets/Timesheet/edit-timesheet/plus.png">&nbsp;
+            Add project
+        </button>
+        <button class="btn-cpy-prjct">
+            <img class="plus" src="../../../../assets/Timesheet/edit-timesheet/plus.png">&nbsp;
+            Copy last week
+        </button>
+        <button class="btn-update-prjct">
+            update
+        </button>
+        <button class="btn-submit-prjct">
+            submit
+        </button>
+    </div>
+    
+</div> -->
