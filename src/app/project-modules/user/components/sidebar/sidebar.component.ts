@@ -21,7 +21,7 @@ export class SidebarComponent {
     },
     {
       index:2,
-      path: '/user/timesheet-dashboard',
+      path: '',
       title: 'Timesheet',
       icon: '../../../../../assets/icons/timesheetinactive.svg'
     },

@@ -49,6 +49,31 @@ color: #8C8C8C;
     line-height: 17px;  
     color: #ffffff;
   }
+
+  .about-div{
+    display: grid;
+    background: #F4F5F9;
+    border-radius: 10px;
+    padding: 3% 2% 2% 3%;
+  }
+
+  .title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #383838;
+    }
+
+    .content{
+      font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+color: #404040;
+
+
+    }
 //   .profile .user .avatar {
 //     position: absolute;
 //     left: 20px;
