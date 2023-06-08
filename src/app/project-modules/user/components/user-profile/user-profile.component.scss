@@ -52,6 +52,7 @@ color: #8C8C8C;
 
   .about-div{
     display: grid;
+    margin-bottom: 20px;
     background: #F4F5F9;
     border-radius: 10px;
     padding: 3% 2% 2% 3%;
@@ -73,6 +74,26 @@ line-height: 18px;
 color: #404040;
 
 
+    }
+    .position{
+font-weight: 500;
+font-size: 12px;
+line-height: 12px;
+color: #5F5F5F;
+
+    }
+    .team-member{
+      font-weight: 580;
+      font-size: 14px;
+      line-height: 19px;
+      color: #383838;
+    }
+    .view-all{
+      font-weight: 580;
+font-size: 14px;
+line-height: 17px;
+text-align: right;
+color: #1C569A;
     }
 //   .profile .user .avatar {
 //     position: absolute;
