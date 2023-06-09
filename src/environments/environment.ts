@@ -5,11 +5,6 @@
 export const environment = {
   production: false,
   apiUrl: 'https://zoft-intez-user-service-be.azurewebsites.net/api/v1/',
-  // s3config: {
-  //   accessKeyId: 'AKIA4REL3TBIP3PYSFOD',
-  //   secretAccessKey: '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',
-  //   region: 'ap-northeast-1'
-  // }
 };
 
 /*
