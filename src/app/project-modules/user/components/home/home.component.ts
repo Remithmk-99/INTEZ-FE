@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ApiService } from 'src/app/project-modules/services/api.service';
+import { ApiConstant } from 'src/app/project-modules/shared/apiconstants';
 
 @Component({
   selector: 'app-home',
@@ -42,9 +44,16 @@ events=[
   }
 ]
 
-constructor(){ 
+
+constructor(
+  private apiService:ApiService
+){ 
   this.getCurrentWeekDates()
  } 
+
+ ngOnInit(){
+  this.getProjectList()
+ }
 
 getCurrentWeekDates() {
   const currentDate = new Date();
@@ -71,6 +80,21 @@ isCurrentDate(date?:number){
   else{
    return false
   }
+}
+
+
+getProjectList() {
+  console.log("this.apiService.baseUrl", this.apiService.baseUrl)
+  this.apiService
+    .ExecuteGet(this.apiService.baseUrl + ApiConstant.getProjectList)
+    .subscribe(
+      (response: any) => {
+       console.log("response",response)
+      },
+      (error: any) => {
+
+      }
+    );
 }
 
 }

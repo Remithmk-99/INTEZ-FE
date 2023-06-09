@@ -10,6 +10,9 @@ import { SidebarComponent } from './project-modules/user/components/sidebar/side
 // import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 // import { GoogleLoginProvider } from 'angularx-social-login';
 
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorInterceptor } from './project-modules/services/interceptor.interceptor'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +22,18 @@ import { SidebarComponent } from './project-modules/user/components/sidebar/side
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
     // SocialLoginModule
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptorInterceptor,
+      multi: true
+    },
     // {
     //   provide: 'SocialAuthServiceConfig',
     //   useValue: {
