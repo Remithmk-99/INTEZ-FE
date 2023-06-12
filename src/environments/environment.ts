@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: 'https://zoft-intez-user-service-be.azurewebsites.net/api/v1/',
+
 };
 
 /*
