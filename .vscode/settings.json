@@ -3,6 +3,6 @@
         "node_modules{,/**}",
         ".vscode{,/**}"
     ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/e327bafa-6f18-45cc-b75c-52a93719289e/resourceGroups/zoft-intez-RG/providers/Microsoft.Web/sites/zoft-intez-web-fe",
+    "appService.defaultWebAppToDeploy": "",
     "appService.deploySubpath": "."
 }
