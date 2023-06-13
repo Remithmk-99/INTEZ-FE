@@ -62,17 +62,7 @@ constructor(
   onToggle() {
     this.isSidebarOpened = !this.isSidebarOpened;
     this.sideOpenEvent.emit(this.isSidebarOpened);
-    // console.log("this.isTitileShow",this.isTitle)
-  //   if( this.isSidebarOpened){
-  //     setTimeout(()=>{
-  //       this.isTitle = true;
-  //     },400)
-  //   }
-  //   else{
-  //     this.isTitle = false;
-  //   }
-  //  console.log("this.isSidebarOpened",this.isSidebarOpened,this.isTitle)
-  }
+   }
   
 
   activateButton(index:number,path:string) {

@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent {
- skills=["UX Design","Product Design","Figma"]
+ skills=["UX Design","Product Design","Figma","UX Design","Product Design","Figma"]
+ projects=["ZoftSolutions Site","GSM one Click","INTEZ","Bass Phase 2","CCA","SchoolWizard"]
  
  teamMembers=[
   {
